@@ -1,7 +1,7 @@
 import random 
 class Dado:
-    def __init__(self,__cara_cantidad):
-        self.__cara_cantidad = __cara_cantidad
+    def __init__(self,cara_cantidad):
+        self.__cara_cantidad = cara_cantidad
     #Getter and Setter
     @property
     def cara_cantidad(self):
@@ -11,10 +11,6 @@ class Dado:
     def cara_cantidad(self,valor):
         self.__cara_cantidad = valor
 
-    #Metodos 
-    def lanzar(self):
-        aleatorio = random.randint(1,self.__cara_cantidad)
-        return f"El resultado {aleatorio}"
     
     
     
